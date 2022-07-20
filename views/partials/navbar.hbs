@@ -1,0 +1,18 @@
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">Delivery App</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isShop}}
+          <li class="active"><a href="/">Shop</a></li>
+        {{else}}
+          <li><a href="/">Shop</a></li>
+        {{/if}}
+
+        {{#if isCart}}
+          <li class="active"><a href="/cart">Shopping Cart</a></li>
+        {{else}}
+          <li><a href="/cart">Shopping Cart</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
